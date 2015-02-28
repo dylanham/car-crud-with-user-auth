@@ -1,0 +1,8 @@
+List of Cars
+- @cars.each do |car|
+  %p= car.make
+  %p= car.model
+  %p= car.year
+  = link_to 'edit', edit_car_path(car)
+  = link_to 'delete', car_path(car), method: :delete
+= link_to 'New Car', new_car_path
